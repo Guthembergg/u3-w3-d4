@@ -10,7 +10,7 @@ const Detail = () => {
 
   const url = "https://api.spaceflightnewsapi.net/v3/articles/";
 
-  const [article, setArticle] = useState<Empty>();
+  const [article, setArticle] = useState<Empty>({} as Empty);
 
   const getArticles = async () => {
     try {
@@ -29,6 +29,7 @@ const Detail = () => {
 
   useEffect(() => {
     getArticles();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   return (

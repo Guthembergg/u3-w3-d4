@@ -7,7 +7,7 @@ function MyNav() {
     <>
       <Navbar bg="dark" variant="dark">
         <Container>
-          <Navbar.Brand href="#home">Best news site </Navbar.Brand>
+          <Navbar.Brand href="/">Best space news site </Navbar.Brand>
           <Nav className="me-auto">
             <Nav.Link href="#home">Home</Nav.Link>
             <Nav.Link href="#features">Articles</Nav.Link>
