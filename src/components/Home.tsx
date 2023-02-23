@@ -1,25 +1,13 @@
 import { useEffect, useState } from "react";
 import { Card } from "react-bootstrap";
-import Button from "react-bootstrap/esm/Button";
+
 import Col from "react-bootstrap/esm/Col";
-import Container from "react-bootstrap/esm/Container";
+
 import Row from "react-bootstrap/esm/Row";
 import { Link } from "react-router-dom";
+import { Empty } from "../interfaces/list";
 
 const Home = () => {
-  interface Empty {
-    id: number;
-    title: string;
-    url: string;
-    imageUrl: string;
-    newsSite: string;
-    summary: string;
-    publishedAt: Date;
-    updatedAt: Date;
-    featured: boolean;
-    launches: any[];
-    events: any[];
-  }
   const url = "https://api.spaceflightnewsapi.net/v3/articles";
 
   const [article, setArticle] = useState<Empty[]>([]);
