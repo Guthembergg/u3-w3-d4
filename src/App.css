@@ -36,3 +36,17 @@
     transform: rotate(360deg);
   }
 }
+.wrapp {
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+}
+.cardimg {
+  height: 50%;
+}
+.myfooter {
+  position: relative;
+}
+.detaildiv {
+  height: 900px;
+}
